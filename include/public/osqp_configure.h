@@ -7,7 +7,9 @@
 /* #undef OSQP_ENABLE_DEBUG */
 
 /* Operating system */
+#ifndef IS_LINUX
 #define IS_LINUX
+#endif
 
 /* Algebra backend */
 #define OSQP_ALGEBRA_BUILTIN
@@ -20,7 +22,7 @@
 /* #undef OSQP_ENABLE_DERIVATIVES */
 
 /* Embedded mode */
-#define OSQP_EMBEDDED_MODE (0)
+/* #undef OSQP_EMBEDDED_MODE */
 
 /* Custom allocators / printing */
 /* #undef OSQP_CUSTOM_MEMORY */

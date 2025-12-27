@@ -1127,8 +1127,7 @@ OSQPInt validate_settings(const OSQPSettings* settings,
     return 1;
   }
 
-  if (from_setup &&
-      settings->adaptive_rho < 0 ||
+  if ((from_setup && settings->adaptive_rho < 0) ||
       settings->adaptive_rho >= _OSQP_ADAPTIVE_RHO_UPDATE_LAST_VALUE) {
     c_eprint("adaptive_rho not a valid choice");
     return 1;

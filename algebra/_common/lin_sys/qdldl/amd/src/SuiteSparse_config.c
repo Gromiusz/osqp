@@ -9,6 +9,8 @@
  * Author: Timothy A. Davis.
  */
 
+// Include OSQP helpers for memory management
+#include "osqp_api_utils.h"
 // Include OSQP Global options for memory management
 #include "glob_opts.h"
 

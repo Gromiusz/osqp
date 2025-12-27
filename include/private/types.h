@@ -41,7 +41,7 @@ typedef struct {
 
 
 
-# ifndef OSQP_EMBEDDED_MODE
+# if !defined(OSQP_EMBEDDED_MODE) || !(OSQP_EMBEDDED_MODE)
 
 /**
  * Polish structure
@@ -103,7 +103,7 @@ struct OSQPWorkspace_ {
   /// Linear System solver structure
   LinSysSolver* linsys_solver;
 
-# ifndef OSQP_EMBEDDED_MODE
+# if !defined(OSQP_EMBEDDED_MODE) || !(OSQP_EMBEDDED_MODE)
   /// Polish structure
   OSQPPolish* pol;
 # endif // ifndef OSQP_EMBEDDED_MODE

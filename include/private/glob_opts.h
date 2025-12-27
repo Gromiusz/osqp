@@ -15,7 +15,7 @@ extern "C" {
 /* DATA CUSTOMIZATIONS (depending on memory manager)-----------------------   */
 
 /* We do not need memory allocation functions if OSQP_EMBEDDED_MODE is enabled */
-# ifndef OSQP_EMBEDDED_MODE
+# if !defined(OSQP_EMBEDDED_MODE) || !(OSQP_EMBEDDED_MODE)
 #  ifdef OSQP_CUSTOM_MEMORY
 /* Use user-provided memory management functions */
 #    include OSQP_CUSTOM_MEMORY
