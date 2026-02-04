@@ -22,7 +22,6 @@ if(EXISTS ${QDLDL_LOCAL_ROOT}/qdldl.c AND EXISTS ${QDLDL_LOCAL_ROOT}/qdldl.h)
 		${QDLDL_LOCAL_ROOT}/amd/src/amd_aat.c
 		${QDLDL_LOCAL_ROOT}/amd/src/amd_1.c
 		${QDLDL_LOCAL_ROOT}/amd/src/amd_2.c
-		${QDLDL_LOCAL_ROOT}/amd/src/amd_aat.c
 		${QDLDL_LOCAL_ROOT}/amd/src/amd_control.c
 		${QDLDL_LOCAL_ROOT}/amd/src/amd_defaults.c
 		${QDLDL_LOCAL_ROOT}/amd/src/amd_info.c
@@ -30,6 +29,7 @@ if(EXISTS ${QDLDL_LOCAL_ROOT}/qdldl.c AND EXISTS ${QDLDL_LOCAL_ROOT}/qdldl.h)
 		${QDLDL_LOCAL_ROOT}/amd/src/amd_postorder.c
 		${QDLDL_LOCAL_ROOT}/amd/src/amd_post_tree.c
 		${QDLDL_LOCAL_ROOT}/amd/src/amd_preprocess.c
+		${QDLDL_LOCAL_ROOT}/amd/src/amd_valid.c
 		${QDLDL_LOCAL_ROOT}/amd/src/SuiteSparse_config.c
 	)
 	target_include_directories(qdldlobject PRIVATE
